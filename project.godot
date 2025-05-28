@@ -10,8 +10,9 @@ config_version=5
 
 [application]
 
-config/name="My Ecosystem Template"
-run/main_scene="uid://dp42fom7cc3n0"
+config/name="Beyond Limits"
+config/description="A simple game to checkout web based platforms"
+run/main_scene="uid://b6a4uluo5ypjt"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0.0924416, 0.147392, 0.187741, 1)
 config/icon="res://icon.svg"

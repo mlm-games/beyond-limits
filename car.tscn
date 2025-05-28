@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://cntbbh05v8rd2"]
+
+[ext_resource type="Script" uid="uid://b8hyvofpf1npj" path="res://scenes/car.gd" id="1_uoj53"]
+[ext_resource type="Texture2D" uid="uid://pgy3kobubq8v" path="res://icon.svg" id="2_k61xc"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1hwpr"]
+friction = 0.5
+bounce = 0.5
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dexii"]
+
+[node name="Car" type="RigidBody2D"]
+top_level = true
+mass = 8.0
+physics_material_override = SubResource("PhysicsMaterial_1hwpr")
+gravity_scale = 0.0
+linear_damp = 1.75
+script = ExtResource("1_uoj53")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_k61xc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_dexii")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.1, 1.1)
+position_smoothing_enabled = true
