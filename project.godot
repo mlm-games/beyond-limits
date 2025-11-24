@@ -12,6 +12,7 @@ config_version=5
 
 config/name="Beyond Limits"
 config/description="A simple game to checkout web based platforms"
+config/tags=PackedStringArray("racing")
 run/main_scene="uid://b6a4uluo5ypjt"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0.0924416, 0.147392, 0.187741, 1)
